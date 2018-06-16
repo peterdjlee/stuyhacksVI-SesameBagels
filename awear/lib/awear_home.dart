@@ -1,3 +1,4 @@
+import 'package:awear/awear_body.dart';
 import 'package:flutter/material.dart';
 
 class AwearHome extends StatelessWidget {
@@ -24,7 +25,7 @@ class AwearHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: topBar,
-      body: new AwearBody(),
+      body: new Container(),
       bottomNavigationBar: new Container(
         color: Colors.white,
         height: 50.0,
