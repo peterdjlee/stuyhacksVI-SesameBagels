@@ -1,4 +1,5 @@
 import 'package:awear/awear_list.dart';
+import 'package:awear/movement_page.dart';
 import 'package:flutter/material.dart';
 
 class AwearHome extends StatelessWidget {
