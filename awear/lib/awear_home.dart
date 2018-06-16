@@ -10,10 +10,11 @@ class AwearHome extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         new Text(
-          'Awear',
+          'AWEAR',
           style: new TextStyle(
-            color: Colors.black
-            //TODO: Add font
+            color: Colors.black,
+            fontFamily: 'Raleway',
+            fontSize: 25.0,
           )
         ),
       ],
@@ -36,18 +37,21 @@ class AwearHome extends StatelessWidget {
               new IconButton(
                   icon: Icon(
                     Icons.home,
+                    size: 30.0,
                   ),
                   onPressed: () {},
               ),
               new IconButton(
                 icon: Icon(
                   Icons.add_a_photo,
+                  size: 30.0,
                 ),
                 onPressed: () {},
               ),
               new IconButton(
                 icon: Icon(
                   Icons.account_circle,
+                  size: 30.0,
                 ),
                 onPressed: () {},
               ),

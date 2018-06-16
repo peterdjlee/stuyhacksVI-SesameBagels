@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
       title: "Awear",
       debugShowCheckedModeBanner: false,
       theme: new ThemeData(
+        fontFamily: 'SongMyung',
         primaryColor: Colors.black,
       ),
       home: new AwearHome(),
