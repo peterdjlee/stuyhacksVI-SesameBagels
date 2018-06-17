@@ -20,7 +20,78 @@ class MovementPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: topBar,
-      body: new Container(),
+      body: new Container(
+        alignment: Alignment.center,
+        child: new Column(
+          children: <Widget>[
+            new Row(
+              children: <Widget> [
+                new Text(
+               'PussyyyHats',
+                textAlign: TextAlign.center,
+                style: new TextStyle(
+                  fontFamily: 'PlayfairDisplay',
+                  fontSize: 30.0,
+                  fontStyle: FontStyle.italic,
+                ),
+                ),
+              ]
+            )
+            new Row(
+              children: <Widget> [
+                new FlatButton(
+          padding: const EdgeInsets.only(left: 0.0, right: 0.0),
+          child: new Image.asset(
+            currentMovement.movementPicPaths[0],
+            width: 75.0,
+            height: 75.0,
+            fit: BoxFit.contain,
+          ),
+          onPressed: () {
+            Navigator.of(context).pushNamed('/PicturePage');
+          },
+        ),
+        new FlatButton(
+          padding: const EdgeInsets.only(left: 0.0, right: 0.0),
+          child: new Image.asset(
+            currentMovement.movementPicPaths[1],
+            width: 75.0,
+            height: 75.0,
+            fit: BoxFit.contain,
+          ),
+          onPressed: () {
+            Navigator.of(context).pushNamed('/PicturePage');
+          },
+        ),
+        new FlatButton(
+          padding: const EdgeInsets.only(left: 0.0, right: 0.0),
+          child: new Image.asset(
+            currentMovement.movementPicPaths[2],
+            width: 75.0,
+            height: 75.0,
+            fit: BoxFit.contain,
+          ),
+          onPressed: () {
+            Navigator.of(context).pushNamed('/PicturePage');
+          },
+        ),
+        new FlatButton(
+          padding: const EdgeInsets.only(left: 0.0, right: 0.0),
+          child: new Image.asset(
+            currentMovement.movementPicPaths[3],
+            width: 75.0,
+            height: 75.0,
+            fit: BoxFit.contain,
+          ),
+          onPressed: () {
+            Navigator.of(context).pushNamed('/PicturePage');
+          },
+        ),
+              ]
+            )
+          ]
+        )
+      ),
       bottomNavigationBar: new Container(
           color: Colors.white,
           height: 50.0,
