@@ -6,13 +6,13 @@ There is a conceptual line that we often draw between "regular people" and the p
 ## What it does
 Our cross-platform app allows users to scroll through various fashion trends tied to certain local political projects, such as the Pussy Hat, Orange Jumpsuit, or a brand of sunglasses made with recycled materials. They can upload photos to these *movements.* Each of these movements has a page that further explains the meaning behind the fashion trend, as well petitions to sign, local politicians to call, or other small acts that a user can take when they "jump on the trend."
 
-## How I built it
+## How we built it
 We used Flutter and Dart, Google's mobile app SDK for creating native interfaces in iOS and Android.
 
-## Challenges I ran into
+## Challenges we ran into
 It was my first time developing an app and using Dart, so I spent a lot of time learning how to install the software to be able to test code on my phone. A lot of time was spent on Dart documentation pages.
 
-## Accomplishments that I'm proud of
+## Accomplishments that we're proud of
 This is one of the first projects that my group did deep research for beforehand, in order to craft a concept that felt meaningful and effective, but also fun. We spent a lot of time reading about fashion activism and projects of local politics.
 
 ## What's next for Awear
