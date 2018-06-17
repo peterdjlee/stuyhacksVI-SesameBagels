@@ -19,3 +19,6 @@ This is one of the first projects that my group did deep research for beforehand
 2. Discussion Section - adding a feature to each movement that allows users to discuss it's merits and the project's effectiveness.
 3. Exploitation and Advertising - finding ways to prevent large companies from taking advantage of the app as a way to advertise and sell clothing, rather than encourage meaningful participation.
 
+## Screenshots
+![alt text](https://raw.githubusercontent.com/peterdjlee/stuyhacksVI-SesameBagels/awear/assets/images/screenshot1.png)
+![alt text](https://raw.githubusercontent.com/peterdjlee/stuyhacksVI-SesameBagels/awear/assets/images/screenshot2.png)
