@@ -1,3 +1,4 @@
+import 'package:awear/movement.dart';
 import 'package:awear/picture_list.dart';
 import 'package:flutter/material.dart';
 
@@ -8,10 +9,11 @@ class AwearList extends StatelessWidget {
     List<Movement> movements = new List<Movement>();
 
     //HARD CODE MOVEMENTS
-    movements.add(new Movement('Pussy Hat','#WomensRights','#WomensMarch',''));
-    movements.add(new Movement('Bob Haircut','#WhoseHaircut','#BeautyStandards',''));
-    movements.add(new Movement('Blazers','#GenderRoles','',''));
-    movements.add(new Movement('No Bra','#FreeTheNipple','',''));
+    movements.add(new Movement('Pussy Hat','#WomensRights','#WomensMarch','pussyhat'));
+    movements.add(new Movement('BLM Shirts','#BlackLivesMatter','#Racism','blmshirts'));
+    movements.add(new Movement('Bob Haircut','#GenderRoles','','bobhaircut'));
+    movements.add(new Movement('Bureo Glasses','#RecycledMaterials','','bureoglasses'));
+    movements.add(new Movement('Vietnam Arm Bands','#War','','vietnamarmbands'));
 
       return new ListView.builder(
           itemCount: movements.length,
@@ -23,7 +25,7 @@ class AwearList extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                           new FlatButton(
-                            padding: const EdgeInsets.only(left:16.0, right:16.0, top:0.0),
+                            padding: const EdgeInsets.only(left:0.0, right:16.0, top:0.0, bottom: 5.0),
                             child: new Text(
                               movements[index].movementTitle,
                               style: new TextStyle(
@@ -36,12 +38,12 @@ class AwearList extends StatelessWidget {
                               //TODO: FILL IN ONPRESSED
                             },
                           ),
-                          new PictureList(),
+                          new PictureList(movements[index]),
                           new Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: <Widget>[
                               new FlatButton(
-                                padding: const EdgeInsets.only(left: 16.0, right: 3.0),
+                                padding: const EdgeInsets.only(left: 2.0, right: 2.0),
                                 child: new Text(
                                   movements[index].movementIssueOne,
                                   style: new TextStyle(
@@ -55,6 +57,7 @@ class AwearList extends StatelessWidget {
                                   //TODO: FILL IN ONPRESSED
                                   }),
                               new FlatButton(
+                                padding: const EdgeInsets.only(left: 2.0, right: 2.0),
                                 child: new Text(
                                   movements[index].movementIssueTwo,
                                   style: new TextStyle(
@@ -77,14 +80,3 @@ class AwearList extends StatelessWidget {
           });
     }
   }
-
-class Movement {
-  final String movementTitle;
-  final String movementIssueOne;
-  final String movementIssueTwo;
-  String movementPicPath = "";
-
-  Movement(this.movementTitle, this.movementIssueOne, this.movementIssueTwo, this.movementPicPath);
-
-
-}
