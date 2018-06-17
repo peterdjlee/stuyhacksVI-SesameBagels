@@ -1,4 +1,5 @@
 # AWEAR
+[Devpost](https://devpost.com/software/awear-316e2h)
 [The Google Slides Presentation](https://docs.google.com/presentation/d/15dNuSjVEyI6_EFuZF-LDctQIQaaTTXMx5yvhgx5OOLQ/edit?usp=sharing)
 There is a conceptual line that we often draw between "regular people" and the politicians, lobbyists, and activists that are partake in politics. People often feel politically disempowered or disengaged because of this gap-- a combination of lack of time, knowledge and interest. Awear seeks to use the concept of **everyday activism** to close this gap, through making "talking politics" accessible, convenient, meaningful, and fun.
 
@@ -18,5 +19,3 @@ This is one of the first projects that my group did deep research for beforehand
 1. Deployment - we want to complete the app and have a product that is useable on an App Store to get real interaction and data. 
 2. Discussion Section - adding a feature to each movement that allows users to discuss it's merits and the project's effectiveness.
 3. Exploitation and Advertising - finding ways to prevent large companies from taking advantage of the app as a way to advertise and sell clothing, rather than encourage meaningful participation.
-
-[Devpost](https://devpost.com/software/awear-316e2h)
