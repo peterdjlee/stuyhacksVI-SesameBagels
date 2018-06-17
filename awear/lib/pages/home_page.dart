@@ -1,4 +1,6 @@
 import 'package:awear/awear_list.dart';
+import 'package:awear/pages/profile_page.dart';
+import 'package:awear/pages/upload_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -36,7 +38,11 @@ class HomePage extends StatelessWidget {
                     size: 30.0,
                   ),
                   onPressed: () {
-                    Navigator.of(context).pushNamed('/AwearPage');
+//                    var route = new MaterialPageRoute(
+//                        builder: (BuildContext context) =>
+//                        new HomePage()
+//                    );
+//                    Navigator.of(context).push(route);
                   },
               ),
               new IconButton(
@@ -45,7 +51,11 @@ class HomePage extends StatelessWidget {
                   size: 30.0,
                 ),
                 onPressed: () {
-                  Navigator.of(context).pushNamed('/UploadPage');
+                  var route = new MaterialPageRoute(
+                      builder: (BuildContext context) =>
+                      new UploadPage()
+                  );
+                  Navigator.of(context).push(route);
                 },
               ),
               new IconButton(
@@ -54,7 +64,11 @@ class HomePage extends StatelessWidget {
                   size: 30.0,
                 ),
                 onPressed: () {
-                  Navigator.of(context).pushNamed('/ProfilePage');
+                  var route = new MaterialPageRoute(
+                      builder: (BuildContext context) =>
+                      new ProfilePage()
+                  );
+                  Navigator.of(context).push(route);
                 },
               ),
             ],

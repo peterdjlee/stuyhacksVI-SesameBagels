@@ -1,4 +1,5 @@
 import 'package:awear/movement.dart';
+import 'package:awear/pages/picture_page.dart';
 import 'package:flutter/material.dart';
 
 class PictureList extends StatelessWidget {
@@ -19,7 +20,11 @@ class PictureList extends StatelessWidget {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            Navigator.of(context).pushNamed('/PicturePage');
+//            var route = new MaterialPageRoute(
+//                builder: (BuildContext context) =>
+//                new PicturePage()
+//            );
+//            Navigator.of(context).push(route);
           },
         ),
         new FlatButton(
@@ -31,7 +36,11 @@ class PictureList extends StatelessWidget {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            Navigator.of(context).pushNamed('/PicturePage');
+//            var route = new MaterialPageRoute(
+//                builder: (BuildContext context) =>
+//                new PicturePage()
+//            );
+//            Navigator.of(context).push(route);
           },
         ),
         new FlatButton(
@@ -43,7 +52,11 @@ class PictureList extends StatelessWidget {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            Navigator.of(context).pushNamed('/PicturePage');
+//            var route = new MaterialPageRoute(
+//                builder: (BuildContext context) =>
+//                new PicturePage()
+//            );
+//            Navigator.of(context).push(route);
           },
         ),
         new FlatButton(
@@ -55,7 +68,11 @@ class PictureList extends StatelessWidget {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            Navigator.of(context).pushNamed('/PicturePage');
+//            var route = new MaterialPageRoute(
+//                builder: (BuildContext context) =>
+//                new PicturePage()
+//            );
+//            Navigator.of(context).push(route);
           },
         ),
       ],

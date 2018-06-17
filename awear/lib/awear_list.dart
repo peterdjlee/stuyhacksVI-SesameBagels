@@ -1,4 +1,7 @@
+import 'package:awear/issue.dart';
 import 'package:awear/movement.dart';
+import 'package:awear/pages/issue_page.dart';
+import 'package:awear/pages/movement_page.dart';
 import 'package:awear/picture_list.dart';
 import 'package:flutter/material.dart';
 
@@ -9,11 +12,11 @@ class AwearList extends StatelessWidget {
     List<Movement> movements = new List<Movement>();
 
     //HARD CODE MOVEMENTS
-    movements.add(new Movement('Pussy Hat','#WomensRights','#WomensMarch','pussyhat'));
-    movements.add(new Movement('BLM Shirts','#BlackLivesMatter','#Racism','blmshirts'));
-    movements.add(new Movement('Bob Haircut','#GenderRoles','','bobhaircut'));
-    movements.add(new Movement('Bureo Glasses','#RecycledMaterials','','bureoglasses'));
-    movements.add(new Movement('Vietnam Arm Bands','#War','','vietnamarmbands'));
+    movements.add(new Movement('Pussy Hat', new Issue('#WomensRights'), new Issue('#WomensMarch'),'pussyhat','Description not yet submitted.'));
+    movements.add(new Movement('BLM Shirts', new Issue('#BlackLivesMatter'), new Issue('#Racism'),'blmshirts','This movement is connected to the larger story of Black Lives Matter. It is about wearing shirts that will spark everyday conversations about what the concept of BLM means, but it is also a chance for you to talk to your local politician about celebrating black leaders in your community, and calling your local police precinct to find out about the programs they have in place to train their officers.'));
+    movements.add(new Movement('Bob Haircut', new Issue('#GenderRoles'),new Issue(''),'bobhaircut','Description not yet submitted.'));
+    movements.add(new Movement('Bureo Glasses', new Issue('#RecycledMaterials'),new Issue(''),'bureoglasses','The environmental cost of fashion is often underestimated, and many of the products we use are energy and resource intensive to use. By wearing Bureo glasses, you can support a company that uses recycled products to create fashionable accessories. Support the movement. Sign the petition to help force fashion companies to be more transparent about their environmental footprint.'));
+    movements.add(new Movement('Vietnam Arm Bands', new Issue('#War'),new Issue(''),'vietnamarmbands','Description not yet submitted.'));
 
       return new ListView.builder(
           itemCount: movements.length,
@@ -35,7 +38,11 @@ class AwearList extends StatelessWidget {
                               ),
                             ),
                             onPressed: () {
-                              Navigator.of(context).pushNamed('/MovementPage');
+                              var route = new MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                  new MovementPage(currentMovement: movements[index],)
+                              );
+                              Navigator.of(context).push(route);
                             },
                           ),
                           new PictureList(movements[index]),
@@ -45,7 +52,7 @@ class AwearList extends StatelessWidget {
                               new FlatButton(
                                 padding: const EdgeInsets.only(left: 2.0, right: 2.0),
                                 child: new Text(
-                                  movements[index].movementIssueOne,
+                                  movements[index].movementIssueOne.issueTitle,
                                   style: new TextStyle(
                                     fontFamily: 'PlayfairDisplay',
                                     color: Colors.grey,
@@ -54,12 +61,16 @@ class AwearList extends StatelessWidget {
                                   ),
                                 ),
                                   onPressed: () {
-                                    Navigator.of(context).pushNamed('/IssuePage');
+                                    var route = new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                        new IssuePage(currentIssue: movements[index].movementIssueOne, currentMovement: movements[index])
+                                    );
+                                    Navigator.of(context).push(route);
                                   }),
                               new FlatButton(
                                 padding: const EdgeInsets.only(left: 2.0, right: 2.0),
                                 child: new Text(
-                                  movements[index].movementIssueTwo,
+                                  movements[index].movementIssueTwo.issueTitle,
                                   style: new TextStyle(
                                    fontFamily: 'PlayfairDisplay',
                                     color: Colors.grey,
@@ -68,7 +79,11 @@ class AwearList extends StatelessWidget {
                                 ),
                              ),
                                 onPressed: () {
-                                    Navigator.of(context).pushNamed('/IssuePage');
+                                  var route = new MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                      new IssuePage(currentIssue: movements[index].movementIssueTwo, currentMovement: movements[index])
+                                  );
+                                  Navigator.of(context).push(route);
                                   },
                             ),
                           ],

@@ -47,6 +47,7 @@ flutter:
     - assets/images/vietnamarmbands1.jpg
     - assets/images/vietnamarmbands2.jpg
     - assets/images/vietnamarmbands3.jpg
+    - assets/images/profile.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
