@@ -1,4 +1,4 @@
-# [AWEAR](https://devpost.com/software/awear-316e2h)
+# [Awear](https://devpost.com/software/awear-316e2h)
 
 [The Google Slides Presentation](https://docs.google.com/presentation/d/15dNuSjVEyI6_EFuZF-LDctQIQaaTTXMx5yvhgx5OOLQ/edit?usp=sharing)
 There is a conceptual line that we often draw between "regular people" and the politicians, lobbyists, and activists that are partake in politics. People often feel politically disempowered or disengaged because of this gap-- a combination of lack of time, knowledge and interest. Awear seeks to use the concept of **everyday activism** to close this gap, through making "talking politics" accessible, convenient, meaningful, and fun.
