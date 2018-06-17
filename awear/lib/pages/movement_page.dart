@@ -113,7 +113,36 @@ class _MovementPageState extends State<MovementPage>{
                   ),
                 ],
               ),
-            )
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 32.0),
+              child: new Column(
+                children: <Widget>[
+                  new Icon(
+                    Icons.call,
+                    size: 30.0,
+                  )
+                ],
+              ),
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 0.0),
+              child: new Column(
+                children: <Widget>[
+                  new Text(
+                    widget.currentMovement.movementContact,
+                    textAlign: TextAlign.center,
+                    style: new TextStyle(
+                      fontFamily: 'PlayfairDisplay',
+                      color: Colors.black,
+                      fontSize: 15.0,
+                      fontStyle: FontStyle.italic,
+                    ),
+                  )
+                ],
+              ),
+            ),
+
           ],
         ),
       ),
