@@ -1,25 +1,20 @@
 import 'package:awear/awear_list.dart';
-import 'package:awear/movement_page.dart';
 import 'package:flutter/material.dart';
 
-class AwearHome extends StatelessWidget {
+class HomePage extends StatelessWidget {
 
   final topBar = new AppBar(
+    centerTitle: true,
     backgroundColor: new Color(0xfff8faf8),
     elevation: 1.0,
-    title: new Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        new Text(
-          'AWEAR',
-          style: new TextStyle(
-            color: Colors.black,
-            fontFamily: 'Raleway',
-            fontSize: 25.0,
-          )
-        ),
-      ],
-    )
+    title: new Text(
+        'AWEAR',
+        style: new TextStyle(
+          color: Colors.black,
+          fontFamily: 'Raleway',
+          fontSize: 25.0,
+        )
+    ),
   );
 
   @override
@@ -40,21 +35,27 @@ class AwearHome extends StatelessWidget {
                     Icons.home,
                     size: 30.0,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/AwearPage');
+                  },
               ),
               new IconButton(
                 icon: Icon(
                   Icons.add_a_photo,
                   size: 30.0,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/UploadPage');
+                },
               ),
               new IconButton(
                 icon: Icon(
                   Icons.account_circle,
                   size: 30.0,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/ProfilePage');
+                },
               ),
             ],
           )

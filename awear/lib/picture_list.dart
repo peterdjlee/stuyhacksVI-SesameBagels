@@ -19,7 +19,7 @@ class PictureList extends StatelessWidget {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            //TODO: FILL IN ONPRESSED
+            Navigator.of(context).pushNamed('/PicturePage');
           },
         ),
         new FlatButton(
@@ -31,7 +31,7 @@ class PictureList extends StatelessWidget {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            //TODO: FILL IN ONPRESSED
+            Navigator.of(context).pushNamed('/PicturePage');
           },
         ),
         new FlatButton(
@@ -43,7 +43,7 @@ class PictureList extends StatelessWidget {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            //TODO: FILL IN ONPRESSED
+            Navigator.of(context).pushNamed('/PicturePage');
           },
         ),
         new FlatButton(
@@ -55,7 +55,7 @@ class PictureList extends StatelessWidget {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            //TODO: FILL IN ONPRESSED
+            Navigator.of(context).pushNamed('/PicturePage');
           },
         ),
       ],

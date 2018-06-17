@@ -35,7 +35,7 @@ class AwearList extends StatelessWidget {
                               ),
                             ),
                             onPressed: () {
-                              //TODO: FILL IN ONPRESSED
+                              Navigator.of(context).pushNamed('/MovementPage');
                             },
                           ),
                           new PictureList(movements[index]),
@@ -54,7 +54,7 @@ class AwearList extends StatelessWidget {
                                   ),
                                 ),
                                   onPressed: () {
-                                  //TODO: FILL IN ONPRESSED
+                                    Navigator.of(context).pushNamed('/IssuePage');
                                   }),
                               new FlatButton(
                                 padding: const EdgeInsets.only(left: 2.0, right: 2.0),
@@ -68,7 +68,7 @@ class AwearList extends StatelessWidget {
                                 ),
                              ),
                                 onPressed: () {
-                                  //TODO: FILL IN ONPRESSED
+                                    Navigator.of(context).pushNamed('/IssuePage');
                                   },
                             ),
                           ],

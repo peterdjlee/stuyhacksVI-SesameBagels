@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MovementPage extends StatelessWidget {
+class PicturePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container();
