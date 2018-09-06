@@ -20,3 +20,7 @@ This is one of the first projects that my group did deep research for beforehand
 1. Deployment - we want to complete the app and have a product that is useable on an App Store to get real interaction and data. 
 2. Discussion Section - adding a feature to each movement that allows users to discuss it's merits and the project's effectiveness.
 3. Exploitation and Advertising - finding ways to prevent large companies from taking advantage of the app as a way to advertise and sell clothing, rather than encourage meaningful participation.
+
+## Screenshots
+<img src="/awear/assets/images/screenshot1.jpg" alt="Main page screenshot" width="300"/> 
+<img src="/awear/assets/images/screenshot2.jpg" alt="Profile page screenshot" width="300"/>
